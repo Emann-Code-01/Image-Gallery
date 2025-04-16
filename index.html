@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="images/LOGO.svg" />
+    <title>EmannCode01 Image Gallery | Task 1</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>EmannCode01 Image Gallery</h1>
+            <p class="subtitle">Browse through for stunning, appealing images made by IfeOluwa Olajubaje(EmannCode01)</p>
+        </header>
+        
+        <div class="filter-container" id="filterContainer">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="architecture">Architecture</button>
+            <button class="filter-btn" data-category="travel">Travels</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="abstracts">Abstacts</button>
+            <button class="filter-btn" data-category="tech-coding">Tech-Coding</button>
+        </div>
+        
+        <div class="search-container">
+            <input type="text" class="search-input" id="searchInput" placeholder="Search images...">
+        </div>
+        
+        <div class="gallery-grid" id="galleryGrid">
+
+        </div>
+    </div>
+    
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="modal-title" id="modalTitle">Image Title</h2>
+                <button class="close-modal" id="closeModal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="" class="modal-image" id="modalImage" alt="Large view">
+                <div class="modal-details">
+                    <div class="modal-category" id="modalCategory">Nature</div>
+                    <p class="modal-desc" id="modalDesc">Image description will appear here.</p>
+                </div>
+            </div>
+            <button class="modal-nav modal-prev" id="modalPrev">&larr;</button>
+            <button class="modal-nav modal-next" id="modalNext">&rarr;</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
