@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
     <div class="container">
         <header>
             <h1>EmannCode01 Image Gallery</h1>
-            <p class="subtitle">Browse through for stunning, appealing images made by IfeOluwa Olajubaje(EmannCode01)</p>
+            <p class="subtitle">Browse through for stunning, appealing images made by IfeOluwa Olajubaje(EmannCode01)
+            </p>
         </header>
-        
+
         <div class="filter-container" id="filterContainer">
             <button class="filter-btn active" data-category="all">All</button>
             <button class="filter-btn" data-category="nature">Nature</button>
@@ -25,16 +28,22 @@
             <button class="filter-btn" data-category="abstracts">Abstacts</button>
             <button class="filter-btn" data-category="tech-coding">Tech-Coding</button>
         </div>
-        
+
         <div class="search-container">
             <input type="text" class="search-input" id="searchInput" placeholder="Search images...">
         </div>
-        
-        <div class="gallery-grid" id="galleryGrid">
 
+        <div>
+            <div class="gallery-grid" id="galleryGrid">
+
+            </div>
+            <div class="add-image" id="addImage">
+                <button class="add-image-btn" add>Add Image</button>
+            </div>
         </div>
+
     </div>
-    
+
     <div class="modal" id="modal">
         <div class="modal-content">
             <div class="modal-header">
@@ -52,7 +61,17 @@
             <button class="modal-nav modal-next" id="modalNext">&rarr;</button>
         </div>
     </div>
-    
+
+    <div class="footer">
+        <div class="col-1">
+            <p>&copy; 2025 EmannCode01. All rights reserved.</p>
+        </div>
+        <div class="col-2">
+            <p>Designed by IfeOluwa Olajubaje</p>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
+
 </html>

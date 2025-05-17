@@ -268,9 +268,57 @@ h1 {
 
 .no-results {
   text-align: center;
-  grid-column: 1 / -1;
+  grid-column: 1;
   padding: 50px;
   color: #7f8c8d;
+}
+
+.add-image{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  border: none;
+}
+
+button {
+  border: none;
+}
+
+.add-image-btn{
+  margin-right: 3.0em;
+  padding: 10px 10px;
+  background-color: #3498db;
+  border-radius: 15px;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  top: 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 150px;
+  letter-spacing: 1px;
+  left: 0;
+  bottom: 0;
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: linear-gradient(45deg, #3498db, #2ecc71);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 @media (max-width: 768px) {
